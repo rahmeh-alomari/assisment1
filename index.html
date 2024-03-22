@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Trackware</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Task Trackware Front End" />
+    <meta name="keywords" content="Task,Trackware,Company,It" />
+    <meta name="author" content="Rahmeh Alomary" />
+    <link href="./Style/css/normalize.css" rel="stylesheet" />
+    <link href="./Style/css/fontawesome-all.css" rel="stylesheet" />
+    <link href="./Style/css/index.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- loading -->
+    <section>
+      <div id="loading"></div>
+    </section>
+    <!-- ./loading -->
+    <section class="hide-Content">
+      <nav>
+        <!-- Start Header -->
+        <!-- Logo -->
+        <header class="logo">
+          <ul class="main-nav">
+            <li>
+              <img
+                src="./img/Logo.png"
+                alt="Logo"
+                width="130px"
+                height="70px"
+              />
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-home fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-bell fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-sticky-note fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-cog fa-2x" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </header>
+        <!-- ./Logo -->
+        <!-- personal information -->
+        <section class="nav-Personalinformation">
+          <div class="avatar-upload">
+            <div class="avatar-edit certificate-icone">
+              <img
+                src="./img/cirtificate.png"
+                alt="cirificaate"
+                width="50px"
+                height="50px"
+                id="pic-icon"
+              />
+              <label for="imageUpload"></label>
+            </div>
+            <div class="avatar-preview">
+              <div
+                id="imagePreview"
+                style="background-image: url('./img/personal-photo.jpg')"
+              ></div>
+            </div>
+          </div>
+          <div class="text-information">
+            <h3>Rahmeh Alomary</h3>
+            <p class="description">6th Grade</p>
+          </div>
+        </section>
+        <!-- ./personal information -->
+        <!-- ./Start Header -->
+      </nav>
+
+      <!-- Plans -->
+      <section style="background-color: #f0f0f0; padding-top: 1px">
+        <section
+          class="main-nav Plans"
+          style="background-color: #cc0000"
+          id="weekly-plans"
+        >
+          <a href="#"
+            ><i
+              class="fa fa-calendar fa-4x"
+              aria-hidden="true"
+              style="color: #fff"
+            ></i>
+          </a>
+
+          <h1 style="padding-left: 5px">Weekly Plans</h1>
+        </section>
+        <!-- serch -->
+        <section
+          class="Plans main-nav search"
+          style="
+            background-color: #fff;
+            justify-content: space-between;
+            max-height: 40px;
+          "
+        >
+          <div class="border">
+            <i
+              class="fas fa-search"
+              style="color: #a09d9d; padding: 6px 0px 0 10px"
+            ></i>
+            <input
+              type="search"
+              id="site-search"
+              name="q"
+              style="border: none"
+            />
+          </div>
+          <a href="#"><i class="fas fa-filter text-color"></i></a>
+        </section>
+        <!-- ./serch -->
+        <!-- tabs-sep -->
+        <section
+          class="main-nav l search2"
+          style="
+            background-color: #f0f0f0;
+            justify-content: space-between;
+            max-height: 700px;
+            margin: auto;
+            align-items: center;
+            max-width: 720px;
+          "
+        >
+          <div class="tabs tabs-color">
+            <input type="radio" name="tabs" id="tabone" checked="checked" />
+            <label for="tabone" class="underline-left-right">Monday</label>
+            <div class="tab">
+              <!-- accordion -->
+              <div class="collapse-content">
+                <div class="collapse" id="first-tab">
+                  <a class="first-tab border-red" href="#first-tab"
+                    ><i class="fa fa-link"></i> Lorem Ipsum</a
+                  >
+                  <div class="content">
+                    <div class="inner-content">
+                      <h3>Lorem Ipsum</h3>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Libero nobis iusto deleniti corporis alias quo a quam
+                      similique cupiditate pariatur aliquid, omnis, officia
+                      dicta officiis impedit nisi dolores ut, distinctio
+                      placeat. Magni dolores perferendis ab laborum in neque,
+                      non exercitationem!
+                    </div>
+                    <p class="backgrond border-red">
+                      The standard Lorem Ipsum passage
+                    </p>
+                  </div>
+                </div>
+                <div class="collapse" id="sec-tab">
+                  <a class="sec-tab border-red" href="#sec-tab"
+                    ><i class="fa fa-link"></i> Dummy text</a
+                  >
+                  <div class="content">
+                    <div class="inner-content">
+                      <h3>Dummy text</h3>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Libero nobis iusto deleniti corporis alias quo a quam
+                      similique cupiditate pariatur aliquid, omnis, officia
+                      dicta officiis impedit nisi dolores ut, distinctio
+                      placeat. Magni dolores perferendis ab laborum in neque,
+                      non exercitationem!
+                    </div>
+                    <p class="backgrond border-red">
+                      The standard Lorem Ipsum passage
+                    </p>
+                  </div>
+                </div>
+                <div class="collapse" id="third-tab">
+                  <a class="third-tab border-red" href="#third-tab"
+                    ><i class="fa fa-link"></i> Text</a
+                  >
+                  <div class="content">
+                    <div class="inner-content">
+                      <h3>Text</h3>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Libero nobis iusto deleniti corporis alias quo a quam
+                      similique cupiditate pariatur aliquid, omnis, officia
+                      dicta officiis impedit nisi dolores ut, distinctio
+                      placeat. Magni dolores perferendis ab laborum in neque,
+                      non exercitationem!
+                    </div>
+                    <p class="backgrond border-red">
+                      The standard Lorem Ipsum passage
+                    </p>
+                  </div>
+                </div>
+                <div class="collapse" id="fourth-tab">
+                  <a class="fourth-tab border-red" href="#fourth-tab"
+                    ><i class="fa fa-link"></i> Standard Lorem</a
+                  >
+                  <div class="content">
+                    <div class="inner-content">
+                      <h3>Standard Lorem</h3>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Libero nobis iusto deleniti corporis alias quo a quam
+                      similique cupiditate pariatur aliquid, omnis, officia
+                      dicta officiis impedit nisi dolores ut, distinctio
+                      placeat. Magni dolores perferendis ab laborum in neque,
+                      non exercitationem!
+                    </div>
+                    <p class="backgrond border-red">
+                      The standard Lorem Ipsum passage
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- ./accordion -->
+            </div>
+
+            <input type="radio" name="tabs" id="tabtwo" />
+            <label for="tabtwo" class="underline-left-right">Tuesday</label>
+            <div class="tab">
+              <!-- accordion -->
+              <div class="collapse-content">
+                <div class="collapse" id="tab1">
+                  <a class="first-tab border-red" href="#tab1"
+                    ><i class="fa fa-link"></i> Ipsum</a
+                  >
+                  <div class="content">
+                    <div class="inner-content">
+                      <h3>Lorem Ipsum</h3>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Libero nobis iusto deleniti corporis alias quo a quam
+                      similique cupiditate pariatur aliquid, omnis, officia
+                      dicta officiis impedit nisi dolores ut, distinctio
+                      placeat. Magni dolores perferendis ab laborum in neque,
+                      non exercitationem!
+                    </div>
+                    <p class="backgrond border-red">
+                      The standard Lorem Ipsum passage
+                    </p>
+                  </div>
+                </div>
+                <div class="collapse" id="tab2">
+                  <a class="sec-tab border-red" href="#tab2"
+                    ><i class="fa fa-link"></i> Dummy
+                  </a>
+                  <div class="content">
+                    <div class="inner-content">
+                      <h3>Dummy text</h3>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Libero nobis iusto deleniti corporis alias quo a quam
+                      similique cupiditate pariatur aliquid, omnis, officia
+                      dicta officiis impedit nisi dolores ut, distinctio
+                      placeat. Magni dolores perferendis ab laborum in neque,
+                      non exercitationem!
+                    </div>
+                    <p class="backgrond border-red">
+                      The standard Lorem Ipsum passage
+                    </p>
+                  </div>
+                </div>
+                <div class="collapse" id="tab3">
+                  <a class="third-tab border-red" href="#tab3"
+                    ><i class="fa fa-link"></i> Text</a
+                  >
+                  <div class="content">
+                    <div class="inner-content">
+                      <h3>Text</h3>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Libero nobis iusto deleniti corporis alias quo a quam
+                      similique cupiditate pariatur aliquid, omnis, officia
+                      dicta officiis impedit nisi dolores ut, distinctio
+                      placeat. Magni dolores perferendis ab laborum in neque,
+                      non exercitationem!
+                    </div>
+                    <p class="backgrond border-red">
+                      The standard Lorem Ipsum passage
+                    </p>
+                  </div>
+                </div>
+                <div class="collapse" id="tab4">
+                  <a class="fourth-tab border-red" href="#tab4"
+                    ><i class="fa fa-link"></i> Standard
+                  </a>
+                  <div class="content">
+                    <div class="inner-content">
+                      <h3>Standard Lorem</h3>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Libero nobis iusto deleniti corporis alias quo a quam
+                      similique cupiditate pariatur aliquid, omnis, officia
+                      dicta officiis impedit nisi dolores ut, distinctio
+                      placeat. Magni dolores perferendis ab laborum in neque,
+                      non exercitationem!
+                    </div>
+                    <p class="backgrond border-red">
+                      The standard Lorem Ipsum passage
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- ./accordion -->
+            </div>
+
+            <input type="radio" name="tabs" id="tabthree" />
+            <label for="tabthree" class="underline-left-right">Wednesday</label>
+            <div class="tab">
+              <h1>Wednesday</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <input type="radio" name="tabs" id="tabfour" />
+            <label for="tabfour" class="underline-left-right">Thursday</label>
+            <div class="tab">
+              <h1>Tab Three Content</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+
+            <input type="radio" name="tabs" id="tabfive" />
+            <label for="tabfive" class="underline-left-right">Saturday</label>
+            <div class="tab">
+              <h1>Tab five Content</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <input type="radio" name="tabs" id="tabsix" />
+            <label for="tabsix" class="underline-left-right">Sunday</label>
+            <div class="tab">
+              <h1>Tab six Content</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </section>
+        <!-- tabs-sep -->
+        <!-- tabs-show -->
+        <section
+          class="Plans search"
+          id="September"
+          style="background-color: #fff"
+        >
+          <h4 class="padding" style="color: #000; padding: 20px 0 0 10px">
+            September 2022
+          </h4>
+          <div class="main-nav padding">
+            <div class="main-nav">
+              <p class="text-color">Start Date</p>
+              <a href="#"><i class="fa fa-calendar text-color"></i></a>
+              <p class="text-color">12 Feb 2020</p>
+            </div>
+            <div class="main-nav" style="padding-left: 25px">
+              <p class="text-color">End Date</p>
+              <a href="#"><i class="fa fa-calendar text-color"></i></a>
+              <p class="text-color">12 Feb 2020</p>
+            </div>
+          </div>
+        </section>
+        <!-- ./tabs-show -->
+
+        <section
+          class="Plans search"
+          id="Octobar"
+          style="background-color: #fff"
+        >
+          <h4 class="padding" style="color: #000; padding: 20px 0 0 10px">
+            Octobar 2022
+          </h4>
+          <div class="main-nav padding">
+            <div class="main-nav">
+              <p class="text-color">Start Date</p>
+              <a href="#"><i class="fa fa-calendar text-color"></i></a>
+              <p class="text-color">12 Oct 2020</p>
+            </div>
+            <div class="main-nav" style="padding-left: 25px">
+              <p class="text-color">End Date</p>
+              <a href="#"><i class="fa fa-calendar text-color"></i></a>
+              <p class="text-color">12 Oct 2020</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="Plans search" style="background-color: #fff">
+          <h4 class="padding" style="color: #000; padding: 20px 0 0 10px">
+            December 2022
+          </h4>
+          <div class="main-nav padding">
+            <div class="main-nav">
+              <p class="text-color">Start Date</p>
+              <a href="#"><i class="fa fa-calendar text-color"></i></a>
+              <p class="text-color">12 Des 2020</p>
+            </div>
+            <div class="main-nav" style="padding-left: 25px">
+              <p class="text-color">End Date</p>
+              <a href="#"><i class="fa fa-calendar text-color"></i></a>
+              <p class="text-color">12 Des 2020</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+    <!-- ./Plans -->
+
+    <script src="./js/jquery.min.js"></script>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
